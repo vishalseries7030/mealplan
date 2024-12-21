@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meal Tracker</title>
+  <link rel="stylesheet" href="./style2.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style src="./style2.css">
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div id="section-1">
+        <div id="goal-section">
+            <h1>Set Your Daily Goals</h1>
+            <input type="number" id="goal-calories" placeholder="Calories Goal" />
+            <input type="number" id="goal-carbs" placeholder="Carbs Goal (g)" />
+            <input type="number" id="goal-fats" placeholder="Fats Goal (g)" />
+            <input type="number" id="goal-proteins" placeholder="Proteins Goal (g)" />
+            <button id="set-goal-btn">Set Goals</button>
+          </div>
+      
+          <div id="tracker-section" style="display: none;">
+            <h1>Meal Tracker</h1>
+            <div id="progress">
+              <h2>Today's Progress</h2>
+              <div class="circular-indicator-parent">
+                <div class="circular-indicator" id="calories-indicator">
+                    <span>0%</span>
+                    
+                </div>
+
+                  <div class="circular-indicator" id="proteins-indicator">
+                    <span>0%</span>
+                    
+                  </div>
+              </div>
+              <div class="progress-bar-parent">
+                <div class="progress-bar">
+                    <span class="progress-carbs" style="width: 0%;">0%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <span class="progress-fats" style="width: 0%;">0%</span>
+                  </div>
+                </div>
+              </div>
+
+      
+            <div id="input-section">
+              <h2>Add a Meal</h2>
+              <input type="text" id="meal-name" placeholder="Meal Name" />
+              <input type="number" id="calories" placeholder="Calories" />
+              <input type="number" id="carbs" placeholder="Carbs (g)" />
+              <input type="number" id="fats" placeholder="Fats (g)" />
+              <input type="number" id="proteins" placeholder="Proteins (g)" />
+              <button id="add-meal-btn">Add Meal</button>
+            </div>
+      
+
+          </div>
+        </div>
+    <div id="section-2" class="form-select" aria-label="Default select example">
+        <div class="wrapping-container">
+            <option value="breakfast">breakfast</option>
+            <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="wrapping-container">
+            <option value="lunch">lunch</option>
+            <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="wrapping-container">
+            <option value="snack">snack</option>
+            <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="wrapping-container">
+            <option value="dinner">dinner</option>
+            <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="wrapping-container">
+            <option value="different-meal">Add different meal</option>
+            <i class="fa-solid fa-plus"></i>
+        </div>
+
+        <br>
+        <hr>
+        <div id="meal-list">
+            <h2>Meal history</h2>
+            <ul id="meals"></ul>
+          </div>
+        
+        
+        
+        
+    </div>
+      
+    </div>
+    
+  <script src="./feature.js"></script>
+</body>
+</html>

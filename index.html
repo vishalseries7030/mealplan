@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Plan Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./style2.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">MealPlan</div>
+            <nav>
+              
+                <ul class="d-flex">
+                    <li><a href="#" class="text-black mx-2">My plan</a></li>
+                    <li><a href="#features" class="text-black mx-2">Features</a></li>
+                    <li><a href="#pricing" class="text-black mx-2">Pricing</a></li>
+                    <li><a href="#signup" class="text-black mx-2">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner Section -->
+    <div class="banner">
+        Get 46% off any subscription when you purchase through the website before 25th December!
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+          <img src="./image/meal .png.jpg" alt="Meal Logo" style="height: 500px;">
+            <h1>Plan Your Meals with Ease</h1>
+            <p>Welcome to Meal Plan Landing Page—your one-stop destination for customized meal planning solutions tailored to fit your lifestyle. Discover how our innovative platform transforms the way you approach meal prep, making it easier, healthier, and more enjoyable.</p>
+            <button class="cta-button">Get Started</button>
+        </div>
+    </section>
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./image/meal plan.jpeg" alt="Feature 1" class="feature-img" >
+                        <h3>Personalized Plans</h3>
+                        <p>Create meal plans tailored to your preferences and goals.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./image/Healthy Recipes.jpg" alt="Feature 2" class="feature-img">
+                        <h3>Healthy Recipes</h3>
+                        <p>Discover a variety of nutritious and delicious recipes.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./image/Track Progress.png" alt="Feature 3" class="feature-img">
+                        <h3>Track Progress</h3>
+                        <p>Monitor your journey towards a healthier lifestyle.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Healthy Life Section -->
+    <!-- <section class="healthy-life">
+        <div class="container">
+            <h2>Features That Help You Achieve Your Healthy Life</h2>
+            <ul>
+                <li>Customizable meal plans</li>
+                <li>Comprehensive nutritional guidance</li>
+                <li>Progress tracking tools</li>
+            </ul>
+        </div>
+    </section> -->
+    <div class="premium-feature">
+        <div>
+            <h1>Try our premium feature today </h1>
+
+        </div>
+        
+        
+    </div>
+
+
+
+
+
+    <div id="app">
+        <div id="section-1">
+            <div id="goal-section">
+                <h1>Set Your Daily Goals</h1>
+                <div class="input-wrapper">
+                    <input type="number" id="goal-calories" placeholder="Calories Goal" />
+                </div>
+                <div class="input-wrapper">
+                    <input type="number" id="goal-carbs" placeholder="Carbs Goal (g)" />
+                </div>
+                <div class="input-wrapper">
+                    <input type="number" id="goal-fats" placeholder="Fats Goal (g)" />
+
+                </div>
+                <div class="input-wrapper">
+                    <input type="number" id="goal-proteins" placeholder="Proteins Goal (g)" />
+                </div>
+                <div class="input-wrapper">
+                    <button id="set-goal-btn">Set Goals</button>
+                </div>
+                
+                
+                
+                
+              </div>
+          
+              <div id="tracker-section" style="display: none;">
+                <h1>Meal Tracker</h1>
+                <div id="progress">
+                  <h2>Today's Progress</h2>
+                  <div class="circular-indicator-parent">
+                    
+                    <div class="circular-indicator" id="calories-indicator">
+                        <span>0% 
+                            <br>
+                          <h1>calorie</h1>
+                        </span>
+                        
+                    </div>
+
+                      <h1>calorie</h1>
+                      <div class="circular-indicator" id="proteins-indicator">
+                        <span>0% 
+                            <br>
+                          <h1>protein</h1>
+                        </span>
+                        
+                      </div>
+                  </div>
+                  <div class="progress-bar-parent">
+                    <div class="progress-bar">
+                        <span class="progress-carbs" style="width: 0%;">0%                             
+                            <br>
+                            <h1>carbs</h1>
+                        </span>
+                      </div>
+                      <div class="progress-bar">
+                        <span class="progress-fats" style="width: 0%;">0%
+                            <br>
+                            <h1>carbs</h1>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+    
+          
+                <div id="input-section" style="display: none;">
+                  <h2>Add a Meal</h2>
+                  <input type="text" id="meal-name" placeholder="Meal Name" />
+                  <input type="number" id="calories" placeholder="Calories" />
+                  <input type="number" id="carbs" placeholder="Carbs (g)" />
+                  <input type="number" id="fats" placeholder="Fats (g)" />
+                  <input type="number" id="proteins" placeholder="Proteins (g)" />
+                  <button id="add-meal-btn">Add Meal</button>
+                </div>
+          
+    
+              </div>
+            </div>
+        <div id="section-2" class="form-select" aria-label="Default select example">
+            <div class="wrapping-container">
+                <option value="breakfast">breakfast</option>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="wrapping-container">
+                <option value="lunch">lunch</option>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="wrapping-container">
+                <option value="snack">snack</option>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="wrapping-container">
+                <option value="dinner">dinner</option>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="wrapping-container">
+                <option value="different-meal">Add different meal</option>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+    
+            <br>
+            <hr>
+            <div id="meal-list">
+                <h2>Meal history</h2>
+                <ul id="meals"></ul>
+              </div>
+            
+            
+            
+            
+        </div>
+          
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- Healthy Life Section -->
+    <section class="healthy-life py-5">
+      <div class="container">
+          <h2 class="text-center mb-4">Features That Help You Achieve Your Healthy Life</h2>
+          <div class="row">
+              <div class="col-md-4 d-flex flex-column align-items-center" >
+                  <img src="./image/./calories.png" alt="Calorie Counter" style="height: auto;" class="img-fluid mb-3">
+                  <h4>Calorie Counter</h4>
+                  <p>Track your daily calorie intake to stay on top of your health goals.</p>
+              </div>
+              <div class="col-md-4 d-flex flex-column align-items-center">
+                  <img src="./image/cooking.png" alt="Recipe Suggestions" class="img-fluid mb-3"  height="50px">
+                  <h4>Recipe Suggestions</h4>
+                  <p>Explore healthy and tasty recipes tailored to your preferences.</p>
+              </div>
+              <div class="col-md-4 d-flex flex-column align-items-center">
+                  <img src="./image/target.png" alt="Challenges" class="img-fluid mb-3">
+                  <h4>Challenges</h4>
+                  <p>Participate in engaging challenges to stay motivated and achieve your goals.</p>
+              </div>
+          </div>
+          <div class="row mt-4">
+              <div class="col-md-4 d-flex flex-column align-items-center">
+                  <img src="./image/heart-rate.png" alt="Automatic Health Tracker" class="img-fluid mb-3">
+                  <h4>Automatic Health Tracker</h4>
+                  <p>Monitor your health stats effortlessly with automated tracking.</p>
+              </div>
+          </div>
+
+      </div>
+  </section>
+
+
+    <!-- Success Stories Section -->
+<section class="success-stories py-5">
+  <div class="container">
+      <h2 class="text-center mb-4">Be One of the Successful Stories</h2>
+      <div class="row">
+          <div class="col-md-6 d-flex flex-column align-items-center">
+              <img src="./image/Kenneth_Johnson_front_480x480.webp" alt="Success Story" class="img-fluid mb-3" style="width: auto; object-fit: cover;">
+          </div>
+          <div class="col-md-6 d-flex flex-column justify-content-center">
+              <h3>Jane Doe</h3>
+              <p><strong>Before:</strong> 180 lbs</p>
+              <p><strong>After:</strong> 145 lbs</p>
+              <p>Jane achieved her goal of losing 35 pounds in just 3 months using our personalized meal plans. Her energy levels have increased, and she feels more confident in her daily activities!</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials">
+  <div class="container">
+      <h2>What People Say About Me</h2>
+      <div class="row">
+          <div class="col-md-4">
+              <div class="testimonial-card">
+                  <p>"This service changed the way I eat and live! Highly recommend."</p>
+                  <h4>- Sarah</h4>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="testimonial-card">
+                  <p>"Easy to use and very effective. Love the recipes!"</p>
+                  <h4>- John</h4>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="testimonial-card">
+                  <p>"The best meal planning tool I have ever used!"</p>
+                  <h4>- Emma</h4>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2>Pricing</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="pricing-card">
+                        <h3>Basic</h3>
+                        <p>$10/month</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="pricing-card">
+                        <h3>Standard</h3>
+                        <p>$20/month</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="pricing-card">
+                        <h3>Premium</h3>
+                        <p>$30/month</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signup Section -->
+    <section id="signup" class="signup">
+        <div class="container">
+            <h2>Sign Up</h2>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MealPlan. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="./feature.js"></script>
+</body>
+
+</html>
